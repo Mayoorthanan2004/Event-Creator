@@ -8,9 +8,7 @@ export default function Signup() {
   const nav = useNavigate();
 
   const signup = async () => {
-    axios.post(
-  "https://8a69333f-b382-4724-ae7e-d2b36ab57abb-00-2pofjhqx85ni.sisko.replit.dev/api/auth/login"
-);
+    await axios.post("https://8a69333f-b382-4724-ae7e-d2b36ab57abb-00-2pofjhqx85ni.sisko.replit.dev/api/auth/signup", form);
     nav("/");
   };
 
