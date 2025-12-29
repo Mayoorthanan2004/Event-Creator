@@ -8,7 +8,7 @@ export default function Dashboard() {
 
   const loadEvents = async () => {
     try {
-      const res = await axios.get("https://8a69333f-b382-4724-ae7e-d2b36ab57abb-00-2pofjhqx85ni.sisko.replit.dev/api/events", { params: { createdBy: user.name } });
+      const res = await axios.get("https://8a69333f-b382-4724-ae7e-d2b36ab57abb-00-2pofjhqx85ni.sisko.replit.dev:3000/api/events", { params: { createdBy: user.name } });
       setEvents(res.data);
     } catch (err) {
       console.log("Failed to fetch events", err);
