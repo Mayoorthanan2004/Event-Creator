@@ -22,7 +22,7 @@ export default function Signup() {
       setLoading(true);
 
       await axios.post(
-        "http://localhost:5000/api/auth/signup",
+        "https://8a69333f-b382-4724-ae7e-d2b36ab57abb-00-2pofjhqx85ni.sisko.replit.dev/api/auth/signup",
         form
       );
 
