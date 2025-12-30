@@ -23,7 +23,7 @@ export default function Dashboard() {
       setLoading(true);
 
       const res = await axios.get(
-        "http://localhost:5000/api/events",
+        "https://8a69333f-b382-4724-ae7e-d2b36ab57abb-00-2pofjhqx85ni.sisko.replit.dev/api/events",
         {
           headers: {
             Authorization: `Bearer ${token}`
