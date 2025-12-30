@@ -14,7 +14,7 @@ export default function Signup() {
   const signup = async () => {
     // basic validation
     if (!form.name || !form.email || !form.password) {
-      alert("அனைத்து புலங்களையும் நிரப்பவும்");
+      alert("Please Fill All Fields");
       return;
     }
 
@@ -22,7 +22,7 @@ export default function Signup() {
       setLoading(true);
 
       await axios.post(
-        "https://8a69333f-b382-4724-ae7e-d2b36ab57abb-00-2pofjhqx85ni.sisko.replit.dev/api/auth/signup",
+        "http://localhost:5000/api/auth/signup",
         form
       );
 

@@ -11,7 +11,7 @@ export default function Login() {
   const login = async () => {
     // validation
     if (!email || !password) {
-      alert("Email மற்றும் Password இரண்டையும் உள்ளிடவும்");
+      alert("Please fill all two fields");
       return;
     }
 
@@ -19,7 +19,7 @@ export default function Login() {
       setLoading(true);
 
       const res = await axios.post(
-        "https://8a69333f-b382-4724-ae7e-d2b36ab57abb-00-2pofjhqx85ni.sisko.replit.dev/api/auth/login",
+        "http://localhost:5000/api/auth/login",
         { email, password }
       );
 
