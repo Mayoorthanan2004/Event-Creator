@@ -22,7 +22,7 @@ export default function Signup() {
       setLoading(true);
 
       await axios.post(
-        "https://event-creator-two.vercel.app/api/auth/signup",
+        "http://localhost:5000/api/auth/signup",
         form
       );
 

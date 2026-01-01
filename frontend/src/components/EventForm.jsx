@@ -23,7 +23,7 @@ export default function EventForm({ refresh }) {
       setLoading(true);
 
       await axios.post(
-        "https://event-creator-two.vercel.app/api/events",
+        "http://localhost:5000/api/events",
         { title, date },
         {
           headers: {
@@ -98,7 +98,7 @@ export default function EventForm({ refresh }) {
       </button>
 
       <footer style={{ color: "#555", marginTop: "20px" }}>
-        Design By S.Mayoor. [BSc.Eng-Moratuwa (reading)]
+        Design By S.Mayoor. [BSc.Eng-Moratuwa (Reading)]
       </footer>
     </div>
   );

@@ -19,7 +19,7 @@ export default function Login() {
       setLoading(true);
 
       const res = await axios.post(
-        "https://event-creator-two.vercel.app/api/auth/login",
+        "http://localhost:5000/api/auth/login",
         { email, password }
       );
 
@@ -101,7 +101,7 @@ export default function Login() {
       </p>
 
       <footer style={{ color: "#555", marginTop: "20px" }}>
-        Design By S.Mayoor. [BSc.Eng-Moratuwa (reading)]
+        Design By S.Mayoor. [BSc.Eng-Moratuwa (Reading)]
       </footer>
     </div>
   );

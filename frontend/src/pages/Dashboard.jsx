@@ -23,7 +23,7 @@ export default function Dashboard() {
       setLoading(true);
 
       const res = await axios.get(
-        "https://event-creator-two.vercel.app/api/events",
+        "http://localhost:5000/api/events",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -90,7 +90,7 @@ export default function Dashboard() {
       )}
 
       <footer style={{ color: "#555", marginTop: "30px" }}>
-        Design By S.Mayoor. [BSc.Eng-Moratuwa (reading)]
+        Design By S.Mayoor. [BSc.Eng-Moratuwa (Reading)]
       </footer>
     </div>
   );
